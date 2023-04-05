@@ -12,7 +12,7 @@ Original file is located at
 import pandas as pd
 import streamlit as st
 import pickle
-df=pd.read_csv("/content/Cars24.csv")
+df=pd.read_csv("Cars24.csv")
 df=df.drop(['Model','EMI (monthly)','Price'],axis=1)
 trfbrand= pickle.load( open('brand.pkl','rb'))
 trfyear= pickle.load( open('year.pkl','rb'))

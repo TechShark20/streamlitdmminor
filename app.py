@@ -68,7 +68,7 @@ location =(col3.selectbox('enter location',loclist))
 if(st.button("Predict Price")):
     
 
-    price=modelpred(model,year, loca,fuel_type, gearinp,ownership,kmsdriven)
+    price=modelpred(model,year, location,fuel_type, gearinp,ownership,kmsdriven)
     st.text("precited selling price in lakhs is: "+str(price))
     #Car Brand	Model Year	Location	Fuel	Driven (Kms)	Gear	Ownership
 #print(modelpred('Maruti',2019,'Hyderabad','Diesel','Automatic',3,40000))

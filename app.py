@@ -62,14 +62,14 @@ model=col2.selectbox('which company', brandlist)
 ownership=col3.selectbox("owner ship",Ownershiplist)
 year=int(col3.text_input('enter year', '2020'))
 location =(col3.selectbox('enter location',loclist))
-
+st.write("this project is submitted for skill based miniproject in datamininglab")
 
 
 if(st.button("Predict Price")):
     
 
     price=int(modelpred(model,year, location,fuel_type, gearinp,ownership,kmsdriven))
-    st.text("precited selling price in lakhs is: "+str(price))
+    st.text("precited selling price in  is: "+str(price))
     #Car Brand	Model Year	Location	Fuel	Driven (Kms)	Gear	Ownership
 #print(modelpred('Maruti',2019,'Hyderabad','Diesel','Automatic',3,40000))
 
